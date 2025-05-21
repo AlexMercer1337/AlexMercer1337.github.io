@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're my princess - Запись на Услугу</title>
+    <link rel="stylesheet" href="book-appointment.css">
+</head>
+<body>
+    <header>
+        <nav class="header-left">
+            <ul>
+                <li><a href="index.php">Главная</a></li>
+                <li><a href="service.php">Услуги</a></li>
+                <li><a href="info.php">О нас</a></li>
+            </ul>
+        </nav>
+        <h1 class="logo">You're My Princess</h1>
+        <nav class="header-right">
+            <ul>
+                <li><a href="view-appointments.php">Мои записи</a></li>
+                <li><a href="profile.php">Профиль</a></li>
+                <li><a href="login.html">Выход</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Запись на Услугу</h1>
+        <form action="book_appointments.php" method="post">
+            <div class="form-group">
+                <label for="service">Выберите Услугу:</label>
+                <select id="service" name="service" required>
+                    <option value="1">Мужская стрижка</option>
+                    <option value="2">Женская стрижка (классическая)</option>
+                    <option value="3">Женская стрижка (креативная)</option>
+                    <option value="4">Детская стрижка</option>
+                    <option value="5">Укладка</option>
+                    <option value="6">Полное окрашивание</option>
+                    <option value="7">Мелирование</option>
+                    <option value="8">Колорирование</option>
+                    <option value="9">Тонирование</option>
+                    <option value="10">Лечебная маска</option>
+                    <option value="11">Ламинирование</option>
+                    <option value="12">Кератиновое выпрямление</option>
+                    <option value="13">Ботокс для волос</option>
+                    <!-- Добавьте другие услуги по мере необходимости -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Выберите Дату:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Выберите Время:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Электронная почта:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <button onclick="window.location.href='payment.html'">Перейти к оплате</button>
+        </form>
+    </div>
+    <footer>
+        <p>© 2024 You're My Princess. Все права защищены.</p>
+    </footer>
+</body>
+</html>
