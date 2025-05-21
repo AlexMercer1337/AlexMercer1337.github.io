@@ -1,0 +1,9 @@
+on: [push]
+name: Run PostgreSQL commands
+jobs:
+  run_postgres:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run PostgreSQL command
+        run: psql -U postgres -c 'SELECT * FROM mytable;'
